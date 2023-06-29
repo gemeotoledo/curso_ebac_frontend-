@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+ }
+
+ header .container {
+    display: flex; /* Joga os links para do lado do titulo h1, antes disso estavam abaixo dele */
+    align-items: center; /* Joga os links para o meio na parte cinza com a mesma separação de cima e baixo */
+    justify-content: space-between; /* Joga os links Esportes e Economia para o canto direito, antes disso eles estavam ao lado do titulo h1 */
+ }
+ 
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif; /* mudar a fonte do menu (palavra Esportes e Economia la em cima a direita)  */
+    font-weight: bold; /* Terá uma fonte maior  */
+    margin-left: 16px; /* Para dar um espaçamento entre esses dois links */
+}
+
+header li a { 
+    color: #f5f6fa; /* Da a cor branca nos links Esportes e Economia */
+    text-decoration: none; /* Remove o anderline dos links */
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+   /* height: 180px; */
+   width: 100%; /* limitando pela largura, dizendo que ela pode ter 100% do tamanho do nosso article e fazer com que a altura se ajuste automaticamente. */
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 { 
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article h3 { /* mudando o tamanho do titulo da noticia de cada foto */
+    font-size: 24px;
+}
+
+
+.articles article a {
+    background-color: blue;
+    color:  #fff;
+    padding: 8px;
+    display: inline-block;
+   text-decoration: none; /* Tira esse anderline que tem debaixo do botão LER MAIS */
+}
+
+.articles article a:hover {
+    text-decoration: underline; /* Ao passar o mouse no botão o underline do LER MAIS volta  */
+}
+
+.articles article p { 
+    font-family: Arial, Helvetica, sans-serif;  /* fonte do paragrafo, texto que tem nas materias */
+    /*text-align:center; isso faz com que o paragrafo fique totalmente centralizado e não ficou legal */
+}
+
+section h2 { /* Alterando o tamando do titulo Esportes e Economia */
+    font-size: 32px;
+}
+
+/* Vamos aplicar uma cor de fundo a seções, temos a de sports e uma de economy */
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#economy {
+    background-color: #f8f59f;
+}
+
+#technology {
+    background-color: rgb(95, 105, 160);
+}
+
+#energy {
+    background-color: rgba(34, 139, 34, 0.589);
+}
+
+/* O mesmo com os botões */
+
+#sports .articles article a {
+    background-color: #009432;
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a;
+}
+
+#technology .articles article a {
+    background-color: rgba(68, 0, 255, 0.61);
+}
+
+#energy .articles article a {
+    background-color: darkgreen;
+}
